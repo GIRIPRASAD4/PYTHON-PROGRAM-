@@ -1,0 +1,14 @@
+def count_matches(s1, s2):
+    matches = 0
+    for i in range(min(len(s1), len(s2))):
+        if s1[i] == s2[i]:
+            matches += 1
+    return matches
+
+# Sample input
+S1 = "what"
+S2 = "watch"
+
+# Counting matches and printing the result
+matches = count_matches(S1, S2)
+print(f"Number of matches: {matches}")
