@@ -1,0 +1,14 @@
+def remove_duplicates_entirely(arr):
+    from collections import Counter
+   # Count the frequency of each element
+    count = Counter(arr)
+   # Filter out elements that occur more than once
+    unique_elements = [num for num in arr if count[num] == 1]
+    return unique_elements
+# Example usage
+array = [15, 14, 25, 14, 32, 14, 31]
+# Sorting the array first since it's not sorted in the example provided
+array.sort()
+
+result = remove_duplicates_entirely(array)
+print(result)
