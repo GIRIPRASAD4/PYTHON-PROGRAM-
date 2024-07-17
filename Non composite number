@@ -1,0 +1,19 @@
+def is_composite(n):
+    if n <= 1:
+        return False
+    if n == 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return True
+    return False
+def find_non_composite_numbers(arr):
+    # Filter out non-composite numbers from the array
+    non_composite_numbers = [num for num in arr if not is_composite(num)]
+    return non_composite_numbers
+# Example usage
+array = [26, 28, 47, 26, 43, 51, 29]
+# Find the non-composite numbers in the array
+non_composite_numbers = find_non_composite_numbers(array)
+# Print the non-composite numbers
+print("Non-composite numbers in the array:", non_composite_numbers)
