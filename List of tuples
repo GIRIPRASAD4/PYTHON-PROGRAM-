@@ -1,0 +1,11 @@
+def create_list_of_tuples(lower, upper):
+    # Generate the list of tuples
+    result = [(num, num**2) for num in range(lower, upper + 1)]
+    return result
+# Example usage
+lower_range = int(input("Enter the lower range: "))
+upper_range = int(input("Enter the upper range: "))
+# Call the function with the provided range
+result = create_list_of_tuples(lower_range, upper_range)
+# Print the result
+print(result)
