@@ -1,0 +1,13 @@
+def count_negative_numbers(lst):
+    # Use a list comprehension to count the negative numbers
+    negative_count = sum(1 for num in lst if num < 0)
+    return negative_count
+
+# Example usage
+list_of_elements = [16, -18, 27, -16, 23, -21, 19]
+
+# Count the number of negative numbers in the list
+result = count_negative_numbers(list_of_elements)
+
+# Print the result
+print("Number of negative numbers in the list:", result)
