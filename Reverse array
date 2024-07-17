@@ -1,0 +1,9 @@
+def reverse_array(arr):
+    # Use slicing to reverse the array
+    return arr[::-1]
+# Example usage
+array = [16, 18, 27, 16, 23, 21, 19]
+# Reverse the array
+reversed_array = reverse_array(array)
+# Print the reversed array
+print("Reversed array:", reversed_array)
