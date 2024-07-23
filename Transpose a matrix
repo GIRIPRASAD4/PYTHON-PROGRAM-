@@ -1,0 +1,19 @@
+def transpose_matrix(matrix):
+    # Use list comprehension to transpose the matrix
+    transposed = [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[0]))]
+    return transposed
+
+# Given matrix
+matrix = [
+    [4, 6, 7, 8], 
+    [3, 7, 2, 7], 
+    [7, 3, 7, 5]
+]
+
+# Transpose the matrix
+transposed_matrix = transpose_matrix(matrix)
+
+# Print the transposed matrix
+print("Transposed Matrix:")
+for row in transposed_matrix:
+    print(row)
