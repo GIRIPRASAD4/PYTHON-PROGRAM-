@@ -1,0 +1,15 @@
+def is_substring(sub, main):
+    return sub in main
+
+# Example usage
+main_string = "Hello, welcome to the world of Python programming!"
+substring1 = "Python"
+substring2 = "Java"
+
+# Check if substring1 is in main_string
+result1 = is_substring(substring1, main_string)
+print(f"Is '{substring1}' a substring of the main string? {result1}")
+
+# Check if substring2 is in main_string
+result2 = is_substring(substring2, main_string)
+print(f"Is '{substring2}' a substring of the main string? {result2}")
