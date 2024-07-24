@@ -1,0 +1,14 @@
+def is_palindrome(s):
+    # Remove non-alphanumeric characters and convert to lowercase
+    cleaned_string = ''.join(char.lower() for char in s if char.isalnum())
+    # Check if the cleaned string is equal to its reverse
+    return cleaned_string == cleaned_string[::-1]
+# Example usage
+string1 = "A man, a plan, a canal, Panama"
+string2 = "Hello, World!"
+# Check if string1 is a palindrome
+result1 = is_palindrome(string1)
+print(f"Is '{string1}' a palindrome? {result1}")
+# Check if string2 is a palindrome
+result2 = is_palindrome(string2)
+print(f"Is '{string2}' a palindrome? {result2}")
