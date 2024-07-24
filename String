@@ -1,0 +1,12 @@
+def count_words(s):
+    # Split the string into words based on whitespace
+    words = s.split()
+    # Return the number of words
+    return len(words)
+
+# Example usage
+string = "Hello, welcome to the world of Python programming!"
+
+# Count the number of words in the string
+word_count = count_words(string)
+print(f"The number of words in the string is: {word_count}")
