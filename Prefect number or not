@@ -1,0 +1,15 @@
+def is_perfect_number(n):
+    if n < 1:
+        return False
+    # Find all divisors of n and sum them up
+    divisors_sum = 0
+    for i in range(1, n):
+        if n % i == 0:
+            divisors_sum += i
+     # A perfect number is equal to the sum of its proper divisors
+    return divisors_sum == n
+# Example usage
+number = 28
+# Check if the number is a perfect number
+result = is_perfect_number(number)
+print(f"Is {number} a perfect number? {result}")
