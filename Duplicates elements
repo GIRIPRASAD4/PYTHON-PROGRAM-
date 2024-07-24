@@ -1,0 +1,26 @@
+def find_duplicates(input_list):
+    # Dictionary to store the count of each element
+    element_count = {}
+    
+    # List to store duplicate elements
+    duplicates = []
+    
+    # Iterate over each element in the input list
+    for element in input_list:
+        # If the element is already in the dictionary, increment its count
+        if element in element_count:
+            element_count[element] += 1
+        else:
+            # Otherwise, add the element to the dictionary with count 1
+            element_count[element] = 1
+    
+    # Iterate over the dictionary to find elements with a count greater than 1
+    for element, count in element_count.items():
+        if count > 1:
+            duplicates.append(element)
+    
+    return duplicates
+
+# Example usage
+input_list = [1, 2, 3, 4, 5, 1, 2, 6, 7, 8, 9, 9]
+print("Duplicate elements:", find_duplicates(input_list))
